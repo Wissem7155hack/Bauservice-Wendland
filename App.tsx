@@ -8,8 +8,30 @@ import {
 } from 'lucide-react';
 import { NavigationLinks, ProjectImage, BlogPost } from './types';
 
+// Import blog images
+import grassImg from './images/grass.jpg';
+import img1 from './images/1.jpeg';
+import img2 from './images/2.jpeg';
+import img3 from './images/3.jpeg';
+import img4 from './images/4.jpeg';
+import img5 from './images/5.jpeg';
+import img6 from './images/6.jpeg';
+import img7 from './images/7.jpeg';
+import img8 from './images/8.jpeg';
+import img9 from './images/9.jpeg';
+import img10 from './images/10.jpeg';
+import img11 from './images/11.jpeg';
+import img12 from './images/12.jpeg';
+import img15 from './images/15.jpeg';
+import img16 from './images/16.jpeg';
+import img17 from './images/17.jpeg';
+import img18 from './images/18.jpeg';
+import img19 from './images/19.jpeg';
+import beforeImg from './images/before.jpeg';
+import afterImg from './images/after.jpeg';
+
 // BeforeAfterSlider Component
-const BeforeAfterSlider: React.FC<{ beforeImage: string; afterImage: string; }> = ({ beforeImage, afterImage }) => {
+const BeforeAfterSlider: React.FC<{ beforeImage: string | Record<string, unknown>; afterImage: string | Record<string, unknown>; }> = ({ beforeImage, afterImage }) => {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -53,7 +75,7 @@ const BeforeAfterSlider: React.FC<{ beforeImage: string; afterImage: string; }> 
       {/* After Image (Background) */}
       <div className="absolute inset-0">
         <img
-          src={afterImage}
+          src={String(afterImage)}
           alt="Nach der Transformation"
           className="w-full h-full object-cover"
           draggable={false}
@@ -69,7 +91,7 @@ const BeforeAfterSlider: React.FC<{ beforeImage: string; afterImage: string; }> 
         style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
       >
         <img
-          src={beforeImage}
+          src={String(beforeImage)}
           alt="Vor der Transformation"
           className="w-full h-full object-cover"
           draggable={false}
@@ -105,10 +127,9 @@ const blogPosts: BlogPost[] = [
     id: '1',
     slug: 'rasenpflege gartenpflege in kuppenheim',
     title: 'Professionelle Rasenpflege & Gartenpflege: Ihr grünes Paradies das ganze Jahr über',
-    image: 'images/grass.jpg',
+    image: grassImg,
     excerpt: 'Bei Luan Allround Service verstehen wir, dass ein makelloser Rasen die Grundlage Ihrer schönen Außenanlage ist. Unser umfassendes wöchentliches Rasenpflege- und Gartenpflegeprogramm umfasst unsere 6-Schritte-Düngung und Unkrautbekämpfung, um sicherzustellen, dass Ihr Rasen und Garten das ganze Jahr über üppig, gesund und perfekt gepflegt bleiben.',
     story: [
-      'Hallo, ich bin Memedali Limani von Luan Allround Service – Ihr Experte für Garten- und Landschaftsbau in Kuppenheim, Rastatt, Baden-Baden und Karlsruhe.',
       'Bei Luan Allround Service erkennen wir die Bedeutung eines makellosen Rasens als Fundament Ihrer schönen Außenanlage. Unser umfassendes wöchentliches Rasenpflege- und Gartenpflegeprogramm umfasst unsere bewährte 6-Schritte-Düngung und Unkrautbekämpfungsstrategie, um sicherzustellen, dass Ihr Rasen und Garten das ganze Jahr über üppig, gesund und perfekt gepflegt bleiben.',
       'Dieses Programm bietet auch eine Auswahl an zwei saisonalen Dienstleistungen – wählen Sie zwischen Winterschnitt, Frühjahrs-Jumpstart, Mulchinstallation, Sommer-Auffrischung oder Herbstreinigung – um die Schönheit und Gesundheit Ihres Gartens mit nachhaltigen Praktiken weiter zu verbessern und zu erhalten.',
 
@@ -171,7 +192,7 @@ const blogPosts: BlogPost[] = [
     id: '2',
     slug: 'professionelle-zaunmontage',
     title: 'Von der Baustelle zum Familienparadies: Wie wir mit Zaun, Rasen und natürlicher Pflanzung einen sicheren und lebendigen Garten in Kuppenheim schufen',
-    image: 'images/7.jpeg',
+    image: img7,
     excerpt: 'Entdecken Sie, wie wir einen sicheren Familiengarten mit modernem Maschendrahtzaun, perfektem Rasen und natürlicher Bepflanzung geschaffen haben.',
     story: [
       'Hallo, ich bin Memedali Limani von Luan Allround Service – Ihr Landschaftsgärtner mit Herz, Handwerk und regionaler Expertise für Kuppenheim, Rastatt und Karlsruhe.',
@@ -201,7 +222,7 @@ const blogPosts: BlogPost[] = [
     id: '3',
     slug: 'sichtschutz-und-privatsphaere',
     title: 'Der Garten als Rückzugsort: Wie wir Ihren privaten Hinterhof in Kuppenheim mit schwarzem Sichtschutz, perfektem Rasen und cleverer Beleuchtung gestaltet haben',
-    image: 'images/9.jpeg',
+    image: img9,
     excerpt: 'Entdecken Sie, wie wir einen modernen Garten mit schwarzem Sichtschutz, perfektem Rasen und stimmungsvoller Beleuchtung in eine private Wohlfühloase verwandelten.',
     story: [
       'Hallo, ich bin Memedali Limani von Luan Allround Service – Ihr Landschaftsgärtner mit Herz, Handwerk und regionaler Expertise für Kuppenheim, Rastatt und Karlsruhe.',
@@ -231,7 +252,7 @@ const blogPosts: BlogPost[] = [
     id: '4',
     slug: 'farbe-form-funktionalitaet-kuppenheim',
     title: 'Farbe, Form & Funktionalität: Wie wir mit Mulch, Hecken und blühenden Azaleen einen Garten in Kuppenheim zum Leuchten bringen',
-    image: './images/10.jpeg',
+    image: img10,
     excerpt: 'Entdecken Sie, wie eine perfekt gestaltete Beetanlage mit Mulch, blühenden Azaleen und strukturierten Hecken einen Garten in eine leuchtende Oase der Ruhe verwandelt.',
     story: [
       'Hallo, ich bin Memedali Limani von Luan Allround Service – Ihr Landschaftsgärtner mit Herz, Handwerk und regionaler Expertise für Kuppenheim, Rastatt und Karlsruhe.',
@@ -280,7 +301,7 @@ const blogPosts: BlogPost[] = [
     id: '5',
     slug: 'kuppenheim-stadion-zaun',
     title: 'Kuppenheims Stadion in seiner neuen Form',
-    image: 'images/18.jpeg',
+    image: img18,
     excerpt: 'Entdecken Sie, wie wir nicht nur Privatgärten, sondern auch öffentliche Räume wie Sport- und Spielgelände sicher und einladend gestalten. Ein grüner Maschendrahtzaun, der Sicherheit und Natur harmonisch vereint.',
     story: [
       'Hallo, ich bin Memedali Limani von Luan Allround Service – Ihr Landschaftsgärtner mit Herz, Handwerk und regionaler Expertise für Kuppenheim, Rastatt und Karlsruhe.',
@@ -326,7 +347,7 @@ const blogPosts: BlogPost[] = [
     id: '6',
     slug: 'vorher-nachher-garten-transformation',
     title: 'Von kahlem Boden zu grünem Paradies: Die magische Verwandlung eines Gartens in Kuppenheim – von der Erde zum perfekten Rasen',
-    image: 'images/after.jpeg',
+    image: afterImg,
     excerpt: 'Erleben Sie die dramatische Transformation eines kahlen, staubigen Bodens in einen lebendigen, grünen Rückzugsort. Diese Vorher-Nachher-Geschichte zeigt, wie wir aus nackter Erde einen perfekten, dichten Rasen geschaffen haben.',
     story: [
       'Servus! Memedali Limani hier. Heute möchte ich Ihnen ein Projekt vorstellen, das zeigt, was echte Premium-Qualität bedeutet: ein Metallzaun, der nicht nur funktional ist, sondern auch ein echtes Statement setzt.',
@@ -458,13 +479,13 @@ const ContactForm = () => {
 
           {/* Phone Field */}
           <div>
-            <label htmlFor="Telefonnummer" className="block text-white font-bold text-sm mb-1">
+            <label htmlFor="phone" className="block text-white font-bold text-sm mb-1">
               Telefon *
             </label>
             <input
-              id="Telefonnummer"
+              id="phone"
               type="tel"
-              name="Telefonnummer"
+              name="phone"
               placeholder="+49 1234 567890"
               className="w-full p-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 text-base"
               required
@@ -473,13 +494,13 @@ const ContactForm = () => {
 
           {/* City Field */}
           <div>
-            <label htmlFor="Stadt" className="block text-white font-bold text-sm mb-1">
+            <label htmlFor="city" className="block text-white font-bold text-sm mb-1">
               Deine Stadt *
             </label>
             <input
-              id="Stadt"
+              id="city"
               type="text"
-              name="Stadt"
+              name="city"
               placeholder="Kuppenheim"
               className="w-full p-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 text-base"
               required
@@ -488,12 +509,12 @@ const ContactForm = () => {
 
           {/* Message Field */}
           <div>
-            <label htmlFor="Nachricht" className="block text-white font-bold text-sm mb-1">
+            <label htmlFor="message" className="block text-white font-bold text-sm mb-1">
               Kurze Beschreibung Ihrer Vorstellungen *
             </label>
             <textarea
-              id="Nachricht"
-              name="Nachricht"
+              id="message"
+              name="message"
               placeholder="Ihre Nachricht..."
               rows={3}
               className="w-full p-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm resize-none"
@@ -501,7 +522,27 @@ const ContactForm = () => {
             />
           </div>
 
-         
+          {/* Checkbox for Terms */}
+          <div className="flex items-start gap-2">
+            <input
+              id="agb"
+              type="checkbox"
+              className="mt-1"
+              required
+            />
+            <label htmlFor="agb" className="text-xs text-gray-300">
+              Ich stimme den{' '}
+              <a
+                href="/agb"
+                className="text-green-500 underline hover:text-green-400 transition-colors"
+                onClick={(e) => e.stopPropagation()}
+              >
+                AGB
+              </a>{' '}
+              zu und erlaube die Kontaktaufnahme.
+            </label>
+          </div>
+
           {/* Submit Button */}
           <button
             type="submit"
@@ -751,12 +792,12 @@ const AboutPreview = () => (
 
 const ProjectsGallery = () => {
   const [images] = useState<ProjectImage[]>([
-    { id: '1', url: './images/grass.jpg', title: 'Professionelle Rasenpflege' },
-    { id: '2', url: './images/7.jpeg', title: 'Das Gartenparadies Ihrer Familie' },
-    { id: '3', url: './images/9.jpeg', title: '' },
-    { id: '4', url: './images/10.jpeg', title: ' ' },
-    { id: '5', url: './images/18.jpeg', title: 'Der perfekte Zaun' },
-    { id: '6', url: './images/after.jpeg', title: 'vorher vs nachher' },
+    { id: '1', url: grassImg, title: 'Professionelle Rasenpflege' },
+    { id: '2', url: img7, title: 'Das Gartenparadies Ihrer Familie' },
+    { id: '3', url: img9, title: '' },
+    { id: '4', url: img10, title: ' ' },
+    { id: '5', url: img18, title: 'Der perfekte Zaun' },
+    { id: '6', url: afterImg, title: 'vorher vs nachher' },
 
 
   ]);
@@ -780,7 +821,7 @@ const ProjectsGallery = () => {
               <Link to={`/blog/${blogPosts[index].slug}`} className="block">
                 <div className="group relative overflow-hidden aspect-[4/3] cursor-pointer shadow-md hover:shadow-xl transition-all duration-500">
                   <img
-                    src={img.url}
+                    src={String(img.url)}
                     alt={blogPosts[index].title}
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   />
@@ -1317,8 +1358,8 @@ const BlogPostPage = () => {
             </RevealOnScroll>
             <RevealOnScroll delay={200}>
               <BeforeAfterSlider
-                beforeImage="./images/before.jpeg"
-                afterImage="./images/after.jpeg"
+                beforeImage={beforeImg}
+                afterImage={afterImg}
               />
             </RevealOnScroll>
           </div>
@@ -1445,25 +1486,25 @@ const FullGalleryPage = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const allGalleryImages: ProjectImage[] = [
-    { id: '1', url: './images/1.jpeg', title: '' },
-    { id: '2', url: './images/2.jpeg', title: '' },
-    { id: '3', url: './images/3.jpeg', title: '' },
-    { id: '4', url: './images/4.jpeg', title: '' },
-    { id: '5', url: './images/5.jpeg', title: ' ' },
-    { id: '6', url: './images/6.jpeg', title: '' },
-    { id: '7', url: './images/7.jpeg', title: '' },
-    { id: '8', url: './images/8.jpeg', title: '' },
-    { id: '9', url: './images/9.jpeg', title: '' },
-    { id: '10', url: './images/10.jpeg', title: ' ' },
-    { id: '11', url: './images/11.jpeg', title: '' },
-    { id: '12', url: './images/12.jpeg', title: '' },
-    { id: '13', url: './images/before.jpeg', title: '' },
-    { id: '14', url: './images/after.jpeg', title: '' },
-    { id: '15', url: './images/15.jpeg', title: '' },
-    { id: '16', url: './images/16.jpeg', title: '' },
-    { id: '17', url: './images/17.jpeg', title: '' },
-    { id: '18', url: './images/18.jpeg', title: '  ' },
-    { id: '19', url: './images/19.jpeg', title: '  ' },
+    { id: '1', url: img1, title: '' },
+    { id: '2', url: img2, title: '' },
+    { id: '3', url: img3, title: '' },
+    { id: '4', url: img4, title: '' },
+    { id: '5', url: img5, title: ' ' },
+    { id: '6', url: img6, title: '' },
+    { id: '7', url: img7, title: '' },
+    { id: '8', url: img8, title: '' },
+    { id: '9', url: img9, title: '' },
+    { id: '10', url: img10, title: ' ' },
+    { id: '11', url: img11, title: '' },
+    { id: '12', url: img12, title: '' },
+    { id: '13', url: beforeImg, title: '' },
+    { id: '14', url: afterImg, title: '' },
+    { id: '15', url: img15, title: '' },
+    { id: '16', url: img16, title: '' },
+    { id: '17', url: img17, title: '' },
+    { id: '18', url: img18, title: '  ' },
+    { id: '19', url: img19, title: '  ' },
   ];
 
   // Display only 16 images initially, or all if expanded
@@ -1548,7 +1589,7 @@ const FullGalleryPage = () => {
                   onClick={() => setSelectedImageIndex(index)}
                 >
                   <img
-                    src={img.url}
+                    src={String(img.url)}
                     alt={img.title}
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-125"
                   />
@@ -1602,7 +1643,7 @@ const FullGalleryPage = () => {
           <div className="relative w-full h-full flex items-center justify-center">
             {/* Main Image */}
             <img
-              src={allGalleryImages[selectedImageIndex].url}
+              src={String(allGalleryImages[selectedImageIndex].url)}
               alt={allGalleryImages[selectedImageIndex].title}
               className="max-w-full max-h-full object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}

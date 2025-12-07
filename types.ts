@@ -17,7 +17,7 @@ export interface ServiceItem {
 
 export interface ProjectImage {
   id: string;
-  url: string;
+  url: string | Record<string, any>;
   title: string;
   isGenerated?: boolean;
 }
@@ -26,7 +26,7 @@ export interface BlogPost {
   id: string;
   slug: string;
   title: string;
-  image: string;
+  image: string | Record<string, any>;
   excerpt: string;
   story: string[];
   tips: { title: string; description: string }[];
