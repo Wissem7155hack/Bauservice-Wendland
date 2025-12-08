@@ -97,8 +97,8 @@ const Navbar: React.FC = () => {
             ))}
 
             <div className="mt-12 flex flex-col items-center space-y-4 border-t border-white/10 pt-12 w-48">
-              <a href="mailto:info@luan-limani.de" className="flex flex-col items-center text-gold-500">
-                <span className="text-xl font-serif text-white">info@luan-limani.de</span>
+              <a href="mailto:luanallroundservice@gmail.com" className="flex flex-col items-center text-gold-500">
+                <span className="text-xl font-serif text-white">luanallroundservice@gmail.com</span>
               </a>
               <a href="tel:+4917647999118" className="flex flex-col items-center text-gold-500">
                 <Phone size={32} className="mb-2" />

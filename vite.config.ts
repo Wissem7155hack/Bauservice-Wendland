@@ -4,8 +4,14 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
+  
+  // Check if deploying to GitHub Pages or Vercel
+  const isGitHubPages = process.env.VERCEL !== 'true';
+  
   return {
-    base: '/Luan-Allround-Service',
+    // Use base path only for GitHub Pages, not for Vercel
+    base: isGitHubPages ? '/Luan-Allround-Service/' : '/',
+    
     server: {
       port: 3000,
       host: '0.0.0.0',
@@ -19,6 +25,10 @@ export default defineConfig(({ mode }) => {
       alias: {
         '@': path.resolve(__dirname, '.'),
       }
+    },
+    build: {
+      outDir: 'dist',
+      sourcemap: false
     }
   };
 });

@@ -1,15 +1,15 @@
 {
-  "homepage": "https://wissem7155hack.github.io/Luan-Allround-Service",
-  "name": "Luan Allround Service | modern landscaping",
+  "name": "Luan Allround Service | Garten- & Landschaftsbau",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "build:gh": "vite build", 
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@google/genai": "^1.30.0",
