@@ -27,6 +27,7 @@ import img16 from './images/16.jpeg';
 import img17 from './images/17.jpeg';
 import img18 from './images/18.jpeg';
 import img19 from './images/19.jpeg';
+import img20 from './images/logo_resized.png';
 import beforeImg from './images/before.jpeg';
 import afterImg from './images/after.jpeg';
 
@@ -1103,7 +1104,7 @@ const AboutPage = () => (
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-gold-400 to-earth-800 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
               <img
-                src="images/logo_resized.png"
+                src={img20}
                 alt="Unser Team"
                 className="relative w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-2xl"
               />
