@@ -5,11 +5,13 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   
-  // Check if deploying to GitHub Pages or Vercel
-  const isGitHubPages = process.env.VERCEL !== 'true';
+  // Check if we're on GitHub Pages (has homepage in package.json)
+  // Or check environment variable
+  const isGitHubPages = process.env.GITHUB_PAGES === 'true' || 
+                       process.env.VERCEL !== 'true';
   
   return {
-    // Use base path only for GitHub Pages, not for Vercel
+    // Dynamic base path
     base: isGitHubPages ? '/Luan-Allround-Service/' : '/',
     
     server: {

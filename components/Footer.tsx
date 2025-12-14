@@ -27,10 +27,10 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-serif mb-6 text-gold-500">Navigation</h3>
             <ul className="space-y-3 text-gray-300 text-sm tracking-wide">
               <li><Link to="/" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1 h-1 bg-gold-500 rounded-full mr-2"></span>Startseite</Link></li>
-              <li><Link to="/leistungen" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1 h-1 bg-gold-500 rounded-full mr-2"></span>Leistungen</Link></li>
-              <li><Link to="/projekte" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1 h-1 bg-gold-500 rounded-full mr-2"></span>Projekte</Link></li>
-              <li><Link to="/ueber-uns" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1 h-1 bg-gold-500 rounded-full mr-2"></span>Über Uns</Link></li>
-              <li><Link to="/kontakt" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1 h-1 bg-gold-500 rounded-full mr-2"></span>Kontakt</Link></li>
+              <li><Link to="/services" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1 h-1 bg-gold-500 rounded-full mr-2"></span>Leistungen</Link></li>
+              <li><Link to="/projects" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1 h-1 bg-gold-500 rounded-full mr-2"></span>Projekte</Link></li>
+              <li><Link to="/about" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1 h-1 bg-gold-500 rounded-full mr-2"></span>Über Uns</Link></li>
+              <li><Link to="/contact" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1 h-1 bg-gold-500 rounded-full mr-2"></span>Kontakt</Link></li>
             </ul>
           </div>
 

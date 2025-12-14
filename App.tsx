@@ -428,7 +428,7 @@ const ContactForm = () => {
     const formData = new FormData(form);
 
     // Web3Forms Access Key
-    formData.append("access_key", "47d58cf4-cf2f-4c87-b933-cbcde2073332");
+    formData.append("access_key", "675b6a89-4977-4eeb-9177-759897523b65");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -720,7 +720,7 @@ const ServicesSection = () => {
 
 const AboutPreview = () => (
   <section className="py-16 md:py-24 bg-earth-900 text-white overflow-hidden relative">
-    <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('https://images.unsplash.com/photo-1558635924-f555998d5819?q=80&w=2000&auto=format&fit=crop')] opacity-5 pointer-events-none"></div>
+    <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('images/moroccan-flower.png')] opacity-5 pointer-events-none"></div>
 
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-16">
@@ -728,7 +728,7 @@ const AboutPreview = () => (
           <div className="relative w-full max-w-lg mx-auto lg:mx-0">
             <div className="absolute -top-4 -left-4 md:-top-6 md:-left-6 w-full h-full border border-gold-500/30 z-0"></div>
             <img
-              src="https://scontent.ftun16-1.fna.fbcdn.net/v/t39.30808-6/594057411_122102874819143401_9017748971187316802_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-9VRZI0VaugQ7kNvwGrx5zA&_nc_oc=Adl-v6sHpoF_fDB7Ci6QFPnU7CvO4diMh6Mgph1aCurJOOGivYac7cPH06c5hF1stnI&_nc_zt=23&_nc_ht=scontent.ftun16-1.fna&_nc_gid=q38kzGWlPRJ8wlcpp8VjXQ&oh=00_AfmdwL3DV3oJBy9cOdoW_6d6xsK3hpZWdG6JpbhrYLirVA&oe=693890B2"
+              src="images/8.jpeg"
               alt="Arbeiten von Luan Allround Service"
               className="relative z-10 w-full h-[400px] md:h-[600px] object-cover shadow-2xl"
             />
@@ -745,15 +745,15 @@ const AboutPreview = () => (
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mt-4 leading-tight">Handwerkliche <span className="text-gold-500 italic">Tradition</span></h2>
 
             <p className="text-gray-300 text-base md:text-lg font-light leading-relaxed mt-4 md:mt-6">
-              Ich bin Luan Allround Service, Ihr zuverlässiger Landschaftsgärtner. Ich übernehme Zaunmontage, Gartenpflege, Terrassen- und Hofreinigung sowie alle anfallenden Arbeiten rund ums Haus — sauber, pünktlich und professionell.
+              Ich bin Memedali Limani, Ihr zuverlässiger Landschaftsgärtner. Ich übernehme Zaunmontage, Gartenpflege, Terrassen- und Hofreinigung sowie alle anfallenden Arbeiten rund ums Haus — sauber, pünktlich und professionell.
             </p>
 
             {/* Unternehmensteil */}
             <div className="flex items-center gap-4 md:gap-6 p-4 md:p-6 bg-white/5 border border-white/10 rounded-sm mt-6 md:mt-8 backdrop-blur-sm hover:bg-white/10 transition-colors">
               <img
-                src="https://scontent.ftun16-1.fna.fbcdn.net/v/t39.30808-6/594075220_122102875347143401_4981314521883585890_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=hpDRKLumNcAQ7kNvwErggEm&_nc_oc=Adn0EJ2IAPQDxiuqUkvXizPuUEC2-693jeoylo7bHgKsy2p5qkgtcnmux2nSz5Tk2gA&_nc_zt=23&_nc_ht=scontent.ftun16-1.fna&_nc_gid=UpDgP_42Qe2jwGXT-qV5fQ&oh=00_AfmK4i7yB9flr6utgJSA56XB6WRNmWxehJqBgwNEFZ_aFA&oe=69386A25"
+                src="images/logo.png"
                 alt="Logo Luan Allround Service"
-                className="w-16 h-16 md:w-24 md:h-24 object-cover border-2 border-gold-500 shadow-md"
+                className="w-25 h-16 md:w-35 md:h-24 object-cover border-2 border-gold-500 shadow-md"
               />
               <div>
                 <h4 className="text-lg md:text-xl font-serif text-white">Luan Allround Service</h4>
@@ -1103,7 +1103,7 @@ const AboutPage = () => (
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-gold-400 to-earth-800 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
               <img
-                src="https://scontent.ftun16-1.fna.fbcdn.net/v/t39.30808-6/590401163_122097381561143401_9174567204637320564_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=AIz-0yXf9TwQ7kNvwElDpCo&_nc_oc=AdmT53NYjq7OjmnwUe4N0TEdSjOxrz5HeLOYps8qwUctOJYLhvh63oyaPjGfA8uZhlc&_nc_zt=23&_nc_ht=scontent.ftun16-1.fna&_nc_gid=ONUUNHgz8sLlDTUhGs2FkQ&oh=00_Afk61y1QdVxQ5En50Z4bw-DfAWAcyZFJskm2tOd3Pjq6kg&oe=69387D1E"
+                src="images/logo_resized.png"
                 alt="Unser Team"
                 className="relative w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-2xl"
               />
@@ -1124,7 +1124,7 @@ const AboutPage = () => (
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 py-8 md:py-12 text-center border-y border-gray-200 my-8 md:my-12">
             <div>
-              <span className="block text-2xl md:text-4xl font-serif text-gold-500 mb-1 md:mb-2">10+</span>
+              <span className="block text-2xl md:text-4xl font-serif text-gold-500 mb-1 md:mb-2">5+</span>
               <span className="text-xs uppercase tracking-widest text-gray-500">Jahre Erfahrung</span>
             </div>
             <div>
