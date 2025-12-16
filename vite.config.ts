@@ -4,16 +4,14 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
-  
-  // Check if we're on GitHub Pages (has homepage in package.json)
-  // Or check environment variable
-  const isGitHubPages = process.env.GITHUB_PAGES === 'true' || 
-                       process.env.VERCEL !== 'true';
-  
+
+  // Use a relative base so the built `dist` works on root or subpath hosts.
+  // This avoids absolute `/RepoName/` URLs which can 404 on custom domains.
+  const base = './';
+
   return {
-    // Dynamic base path
-    base: isGitHubPages ? '/Luan-Allround-Service/' : '/',
-    
+    base,
+
     server: {
       port: 3000,
       host: '0.0.0.0',
