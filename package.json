@@ -1,16 +1,19 @@
 {
-  "name": "Luan Allround Service | Garten- & Landschaftsbau",
+  "name": "Bauservice Wendland | Bau & Handwerk",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:gh": "vite build", 
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
+
+  
+"homepage": "https://Wissem7155hack.github.io/Bauservice-Wendland",
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "build:gh": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "@google/genai": "^1.30.0",
     "lucide-react": "^0.554.0",

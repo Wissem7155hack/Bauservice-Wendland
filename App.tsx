@@ -9,27 +9,22 @@ import {
 import { NavigationLinks, ProjectImage, BlogPost } from './types';
 
 // Import blog images
-import grassImg from './images/grass.jpg';
-import img1 from './images/1.jpeg';
-import img2 from './images/2.jpeg';
-import img3 from './images/3.jpeg';
-import img4 from './images/4.jpeg';
-import img5 from './images/5.jpeg';
-import img6 from './images/6.jpeg';
-import img7 from './images/7.jpeg';
-import img8 from './images/8.jpeg';
-import img9 from './images/9.jpeg';
-import img10 from './images/10.jpeg';
-import img11 from './images/11.jpeg';
-import img12 from './images/12.jpeg';
-import img15 from './images/15.jpeg';
-import img16 from './images/16.jpeg';
-import img17 from './images/17.jpeg';
-import img18 from './images/18.jpeg';
-import img19 from './images/19.jpeg';
-import img20 from './images/logo_resized.png';
-import beforeImg from './images/before.jpeg';
-import afterImg from './images/after.jpeg';
+import img1 from './images/grass.jpg';
+import img2 from './images/grasshero2.png';
+import img3 from './images/m5KWqDK6nMiJ7EBZ.jpeg';
+import img4 from './images/pruining.png';
+import img5 from './images/turf.png';
+import img6 from './images/turg.png';
+import img7 from './images/YZ9nq4r7rVSEQBrG.jpeg';
+
+import img8 from './images/SERVICES.png';
+
+import img9 from './images/moroccan-flower.png';
+import img10 from './images/pattern.png';
+import img11 from './images/logoo.png';
+import img12 from './images/path.jpg';
+
+
 
 // BeforeAfterSlider Component
 const BeforeAfterSlider: React.FC<{ beforeImage: string | Record<string, unknown>; afterImage: string | Record<string, unknown>; }> = ({ beforeImage, afterImage }) => {
@@ -128,14 +123,14 @@ const blogPosts: BlogPost[] = [
     id: '1',
     slug: 'rasenpflege gartenpflege in kuppenheim',
     title: 'Professionelle Rasenpflege & Gartenpflege: Ihr grünes Paradies das ganze Jahr über',
-    image: grassImg,
-    excerpt: 'Bei Luan Allround Service verstehen wir, dass ein makelloser Rasen die Grundlage Ihrer schönen Außenanlage ist. Unser umfassendes wöchentliches Rasenpflege- und Gartenpflegeprogramm umfasst unsere 6-Schritte-Düngung und Unkrautbekämpfung, um sicherzustellen, dass Ihr Rasen und Garten das ganze Jahr über üppig, gesund und perfekt gepflegt bleiben.',
+    image: img1,
+    excerpt: 'Bei Bauservice Wendland verstehen wir, dass ein makelloser Rasen die Grundlage Ihrer schönen Außenanlage ist. Unser umfassendes wöchentliches Rasenpflege- und Gartenpflegeprogramm umfasst unsere 6-Schritte-Düngung und Unkrautbekämpfung, um sicherzustellen, dass Ihr Rasen und Garten das ganze Jahr über üppig, gesund und perfekt gepflegt bleiben.',
     story: [
-      'Bei Luan Allround Service erkennen wir die Bedeutung eines makellosen Rasens als Fundament Ihrer schönen Außenanlage. Unser umfassendes wöchentliches Rasenpflege- und Gartenpflegeprogramm umfasst unsere bewährte 6-Schritte-Düngung und Unkrautbekämpfungsstrategie, um sicherzustellen, dass Ihr Rasen und Garten das ganze Jahr über üppig, gesund und perfekt gepflegt bleiben.',
+      'Bei Bauservice Wendland erkennen wir die Bedeutung eines makellosen Rasens als Fundament Ihrer schönen Außenanlage. Unser umfassendes wöchentliches Rasenpflege- und Gartenpflegeprogramm umfasst unsere bewährte 6-Schritte-Düngung und Unkrautbekämpfungsstrategie, um sicherzustellen, dass Ihr Rasen und Garten das ganze Jahr über üppig, gesund und perfekt gepflegt bleiben.',
       'Dieses Programm bietet auch eine Auswahl an zwei saisonalen Dienstleistungen – wählen Sie zwischen Winterschnitt, Frühjahrs-Jumpstart, Mulchinstallation, Sommer-Auffrischung oder Herbstreinigung – um die Schönheit und Gesundheit Ihres Gartens mit nachhaltigen Praktiken weiter zu verbessern und zu erhalten.',
 
       '## Rasenmähen – Das Fundament der Rasenpflege',
-      'Ein gut gemähter Rasen geht über einfache Ästhetik hinaus; er ist entscheidend für die Gesundheit und Vitalität Ihres Grases. Bei Luan Allround Service folgen wir optimalen Mähpraktiken und halten unsere Schnitthöhen zwischen 3 und 5 cm, um einen dichten, robusten Rasen zu fördern.',
+      'Ein gut gemähter Rasen geht über einfache Ästhetik hinaus; er ist entscheidend für die Gesundheit und Vitalität Ihres Grases. Bei Bauservice Wendland folgen wir optimalen Mähpraktiken und halten unsere Schnitthöhen zwischen 3 und 5 cm, um einen dichten, robusten Rasen zu fördern.',
       'Wir verwenden scharfe Klingen für saubere, präzise Schnitte, die Schäden an den Grashalmen verhindern und das Krankheitsrisiko verringern. Unsere Mähmuster werden strategisch variiert, um Bodenverdichtung zu vermeiden und die natürliche Zersetzung von Grasschnitt zu fördern, was Ihren Rasen mit wichtigen Nährstoffen anreichert.',
       'Zusätzlich sorgt unsere Kantenschnitt-Technik für ein poliertes, gepflegtes Erscheinungsbild, das Ihre Pflanzbeete definiert und die Gesamtschönheit Ihres Gartens hervorhebt.',
 
@@ -163,8 +158,8 @@ const blogPosts: BlogPost[] = [
       '• **Herbstreinigung**: Bereiten Sie Ihren Garten mit einer gründlichen Reinigung auf den Winter vor. Laubentfernung, Rückschnitt und Wintervorbereitung.',
       'Dieser anpassbare Ansatz ermöglicht es Ihnen, unsere Dienstleistungen auf die spezifischen Bedürfnisse Ihres Gartens abzustimmen und optimale Pflege und Schönheit das ganze Jahr über zu gewährleisten.',
 
-      '## Warum Luan Allround Service für Ihre Rasenpflege wählen',
-      'Wenn Sie Luan Allround Service für Ihre wöchentliche Rasenpflege wählen, erhalten Sie nicht nur einen Service; Sie investieren in die Gesundheit und Schönheit Ihres Außenbereichs. Unser engagiertes Team von Landschaftsbau-Profis ist bestrebt, Ihnen das höchste Maß an Pflege zu bieten und sicherzustellen, dass Ihr Rasen und Garten nicht nur optimal aussehen, sondern auch nachhaltig und umweltfreundlich sind.',
+      '## Warum Bauservice Wendland für Ihre Rasenpflege wählen',
+      'Wenn Sie Bauservice Wendland für Ihre wöchentliche Rasenpflege wählen, erhalten Sie nicht nur einen Service; Sie investieren in die Gesundheit und Schönheit Ihres Außenbereichs. Unser engagiertes Team von Landschaftsbau-Profis ist bestrebt, Ihnen das höchste Maß an Pflege zu bieten und sicherzustellen, dass Ihr Rasen und Garten nicht nur optimal aussehen, sondern auch nachhaltig und umweltfreundlich sind.',
       'Durch die Partnerschaft mit uns wählen Sie ein Unternehmen, das die Schönheit und Gesundheit Ihres Rasens genauso schätzt wie Sie. Kontaktieren Sie uns noch heute, um mehr über unsere Dienstleistungen zu erfahren und wie wir Ihren Rasen in ein üppiges, lebendiges Außenparadies verwandeln können.'
     ],
     tips: [
@@ -196,7 +191,7 @@ const blogPosts: BlogPost[] = [
     image: img7,
     excerpt: 'Entdecken Sie, wie wir einen sicheren Familiengarten mit modernem Maschendrahtzaun, perfektem Rasen und natürlicher Bepflanzung geschaffen haben.',
     story: [
-      'Hallo, ich bin Memedali Limani von Luan Allround Service – Ihr Landschaftsgärtner mit Herz, Handwerk und regionaler Expertise für Kuppenheim, Rastatt und Karlsruhe.',
+      'Hallo, ich bin André von Bauservice Wendland – Ihr Handwerker mit Fachkompetenz und regionaler Expertise.',
       'Heute möchte ich Ihnen ein Projekt zeigen, das Familienfreundlichkeit, Sicherheit und natürliche Schönheit in perfekter Harmonie vereint. Dieser Garten ist kein Zufall – er ist das Ergebnis einer sorgfältigen Planung, die genau auf die Bedürfnisse einer jungen Familie abgestimmt war.',
       'Vor einigen Monaten stand mir ein Kunde gegenüber, der sich Sorgen um die Sicherheit seines Gartens machte. Sein Kind spielte gerne draußen, und er wollte sicherstellen, dass der Bereich abgegrenzt war – aber ohne den Charme des Gartens zu verlieren. Gemeinsam haben wir uns entschieden, einen modernen, robusten Maschendrahtzaun zu installieren, der nicht nur stabil und langlebig ist, sondern auch harmonisch in die Umgebung passt.',
       'Die Installation war eine Herausforderung, aber genau das macht meine Arbeit so spannend. Wir haben die Pfosten präzise ausgerichtet, die Zaunfelder sorgfältig montiert und darauf geachtet, dass jede Schraube sitzt. Das Ergebnis? Ein Zaun, der nicht nur hält, was er verspricht, sondern auch noch gut aussieht.',
@@ -226,7 +221,7 @@ const blogPosts: BlogPost[] = [
     image: img9,
     excerpt: 'Entdecken Sie, wie wir einen modernen Garten mit schwarzem Sichtschutz, perfektem Rasen und stimmungsvoller Beleuchtung in eine private Wohlfühloase verwandelten.',
     story: [
-      'Hallo, ich bin Memedali Limani von Luan Allround Service – Ihr Landschaftsgärtner mit Herz, Handwerk und regionaler Expertise für Kuppenheim, Rastatt und Karlsruhe.',
+      'Hallo, ich bin André von Bauservice Wendland – Ihr Handwerker mit Fachkompetenz und regionaler Expertise.',
       'Heute möchte ich Ihnen ein Projekt zeigen, das alles vereint, was einen modernen, gepflegten Garten ausmacht: Privatsphäre, Ästhetik, Funktionalität und Wohlfühlatmosphäre. Dieser Garten ist kein Zufall – er ist das Ergebnis einer sorgfältigen Planung, die genau auf die Wünsche des Kunden abgestimmt war. Und ja, auch hier war ich dabei – von der ersten Beratung bis zur letzten Pflanze.',
       'Vor einigen Monaten stand mir ein Kunde gegenüber, der sich nach Ruhe und Privatsphäre sehnte. Sein Garten grenzte direkt an Nachbarn, und er wollte einen Ort schaffen, an dem er entspannen, grillen und mit seiner Familie Zeit verbringen konnte – ohne ständige Blicke von außen.',
       'Gemeinsam haben wir uns für eine kombinierte Lösung aus Sichtschutzzaun und Pflanzung entschieden. Der Zaun ist aus schwarzen, vertikal angeordneten Holzplatten, die nicht nur optisch ansprechend sind, sondern auch eine hohe Sichtdichte bieten. Dazu kamen junge Rosenstöcke und niedrige Hecken, die den Zaun sanft umspielen und ihn im Laufe der Zeit noch natürlicher erscheinen lassen.',
@@ -256,7 +251,7 @@ const blogPosts: BlogPost[] = [
     image: img10,
     excerpt: 'Entdecken Sie, wie eine perfekt gestaltete Beetanlage mit Mulch, blühenden Azaleen und strukturierten Hecken einen Garten in eine leuchtende Oase der Ruhe verwandelt.',
     story: [
-      'Hallo, ich bin Memedali Limani von Luan Allround Service – Ihr Landschaftsgärtner mit Herz, Handwerk und regionaler Expertise für Kuppenheim, Rastatt und Karlsruhe.',
+      'Hallo, ich bin André von Bauservice Wendland – Ihr Handwerker mit Fachkompetenz und regionaler Expertise.',
       'Heute möchte ich Ihnen ein Projekt zeigen, das **die Kraft der Farbe, die Schönheit der Form und die Wichtigkeit der Pflege** in einem einzigen Bild vereint: eine **perfekt gestaltete Beetanlage mit Mulch, blühenden Azaleen und strukturierten Hecken**.',
       'Dieser Garten ist kein Zufall – er ist das Ergebnis einer sorgfältigen Planung, die genau auf die Wünsche des Kunden abgestimmt war. Und ja, auch hier war ich dabei – von der ersten Beratung bis zur letzten Pflanze.',
 
@@ -267,7 +262,7 @@ const blogPosts: BlogPost[] = [
       'Und dann die Beleuchtung: **Weiße, klassische Gartenlampen** entlang des Zauns, die bei Dunkelheit eine warme, einladende Atmosphäre schaffen. Kein grelles Licht – sondern sanfte Akzente, die den Garten zum Leuchten bringen.',
 
       '## Warum ein Landschaftsgärtner mehr als nur „Gras mähen" kann',
-      'Viele denken, ein Gärtner macht nur Rasen und Hecken. Aber bei Luan Allround Service verstehen wir unter „Landschaftsbau" **die ganzheitliche Gestaltung Ihres Außenraums** – von der Bodenplanung über die Pflanzung bis hin zur Beleuchtung und Sichtschutzlösung.',
+      'Viele denken, ein Gärtner macht nur Rasen und Hecken. Aber bei Bauservice Wendland verstehen wir unter „Landschaftsbau" **die ganzheitliche Gestaltung Ihres Außenraums** – von der Bodenplanung über die Pflanzung bis hin zur Beleuchtung und Sichtschutzlösung.',
 
       '**Unsere Leistungen:**',
       '✅ Garten- & Landschaftsbau',
@@ -302,10 +297,10 @@ const blogPosts: BlogPost[] = [
     id: '5',
     slug: 'kuppenheim-stadion-zaun',
     title: 'Kuppenheims Stadion in seiner neuen Form',
-    image: img18,
+    image: img1,
     excerpt: 'Entdecken Sie, wie wir nicht nur Privatgärten, sondern auch öffentliche Räume wie Sport- und Spielgelände sicher und einladend gestalten. Ein grüner Maschendrahtzaun, der Sicherheit und Natur harmonisch vereint.',
     story: [
-      'Hallo, ich bin Memedali Limani von Luan Allround Service – Ihr Landschaftsgärtner mit Herz, Handwerk und regionaler Expertise für Kuppenheim, Rastatt und Karlsruhe.',
+      'Hallo, ich bin André von Bauservice Wendland – Ihr Handwerker mit Fachkompetenz und regionaler Expertise.',
       'Heute möchte ich Ihnen ein Projekt zeigen, das nicht nur Privatgärten, sondern auch öffentliche Räume sicher und einladend macht: den Zaun um ein Sport- und Spielgelände. Ja, Sie haben richtig gelesen – wir bauen nicht nur Zäune für private Gärten, sondern auch für Schulen, Vereine, Spielplätze und Sportanlagen.',
       'Dieser Zaun ist kein gewöhnlicher Zaun. Er ist funktionell, robust und gleichzeitig harmonisch in die Umgebung eingebettet. Die grüne Pulverbeschichtung passt perfekt zur Wiese und den Bäumen – ein Zeichen dafür, dass Sicherheit und Natur nicht Gegensätze sein müssen.',
 
@@ -315,7 +310,7 @@ const blogPosts: BlogPost[] = [
       'Die Installation war eine Herausforderung, aber genau das macht meine Arbeit so spannend. Wir haben die Pfosten präzise ausgerichtet, die Zaunfelder sorgfältig montiert und darauf geachtet, dass jede Schraube sitzt. Das Ergebnis? Ein Zaun, der nicht nur hält, was er verspricht, sondern auch noch gut aussieht.',
 
       '## Warum ein Landschaftsgärtner mehr als nur „Gras mähen" kann',
-      'Viele denken, ein Gärtner macht nur Rasen und Hecken. Aber bei Luan Allround Service verstehen wir unter „Landschaftsbau" die ganzheitliche Gestaltung Ihres Außenraums – von der Bodenplanung über die Pflanzung bis hin zur Beleuchtung und Sichtschutzlösung.',
+      'Viele denken, ein Gärtner macht nur Rasen und Hecken. Aber bei Bauservice Wendland verstehen wir unter „Landschaftsbau" die ganzheitliche Gestaltung Ihres Außenraums – von der Bodenplanung über die Pflanzung bis hin zur Beleuchtung und Sichtschutzlösung.',
 
       '**Unsere Leistungen:**',
       '✅ Garten- & Landschaftsbau',
@@ -348,10 +343,10 @@ const blogPosts: BlogPost[] = [
     id: '6',
     slug: 'vorher-nachher-garten-transformation',
     title: 'Von kahlem Boden zu grünem Paradies: Die magische Verwandlung eines Gartens in Kuppenheim – von der Erde zum perfekten Rasen',
-    image: afterImg,
+    image: img1,
     excerpt: 'Erleben Sie die dramatische Transformation eines kahlen, staubigen Bodens in einen lebendigen, grünen Rückzugsort. Diese Vorher-Nachher-Geschichte zeigt, wie wir aus nackter Erde einen perfekten, dichten Rasen geschaffen haben.',
     story: [
-      'Servus! Memedali Limani hier. Heute möchte ich Ihnen ein Projekt vorstellen, das zeigt, was echte Premium-Qualität bedeutet: ein Metallzaun, der nicht nur funktional ist, sondern auch ein echtes Statement setzt.',
+      'Servus! André von Bauservice Wendland. Heute möchte ich Ihnen ein Projekt vorstellen, das zeigt, was echte Premium-Qualität bedeutet: ein Metallzaun, der nicht nur funktional ist, sondern auch ein echtes Statement setzt.',
       'Ein Unternehmer aus Rastatt wollte sein Firmengelände absichern – aber nicht mit irgendeinem Zaun. Er wollte etwas Besonderes, etwas, das Qualität und Professionalität ausstrahlt. Nach einem ausführlichen Beratungsgespräch haben wir uns für einen hochwertigen Metallzaun mit Sonderanfertigung entschieden.',
       'Die Herausforderung? Das Gelände war uneben, und wir mussten den Zaun an die Topografie anpassen. Aber genau solche Herausforderungen liebe ich. Wir haben jeden Pfosten individuell angepasst, jedes Zaunfeld perfekt ausgerichtet.',
       'Das Ergebnis ist ein Zaun, der nicht nur sicher ist, sondern auch beeindruckt. Der Kunde war so zufrieden, dass er uns bereits für weitere Projekte gebucht hat.'
@@ -373,6 +368,7 @@ const blogPosts: BlogPost[] = [
   },
 
 ];
+
 
 
 // --- Utility Components ---
@@ -603,7 +599,7 @@ const Hero = () => (
     {/* Hintergrundbild mit langsamer Zoom-Effekt */}
     <div
       className="absolute inset-0 bg-cover bg-center animate-slow-zoom"
-      style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1723208757257-3e71cf4c5040?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")' }}
+      style={{ backgroundImage: 'url("images/grasshero2.png")' }}
     >
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-earth-900/80 via-transparent to-black/20"></div>
@@ -615,7 +611,7 @@ const Hero = () => (
         <div className="max-w-2xl text-center lg:text-left">
           <div className="overflow-hidden mb-2">
             <p className="text-gold-500 font-bold tracking-[0.3em] uppercase text-xs md:text-sm animate-[fadeInUp_1s_ease-out_forwards]">
-              Garten- & Landschaftsbau
+              Bau- & Handwerk
             </p>
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.1] drop-shadow-2xl mb-6 md:mb-8 animate-[fadeInUp_1.2s_ease-out_forwards]">
@@ -625,7 +621,7 @@ const Hero = () => (
           </h1>
 
           <p className="text-lg md:text-xl text-gray-200 font-light max-w-2xl border-l-2 border-gold-500 pl-4 md:pl-6 mb-8 md:mb-10 animate-[fadeInUp_1.4s_ease-out_forwards] mx-auto lg:mx-0">
-            Professionelle Gartenarbeiten: Zaunmontage, Gartenpflege, Reinigung und Allround-Service. Kontaktieren Sie uns für ein unverbindliches Angebot.
+            Bauservice Wendland bietet umfassende Bau- und Handwerksleistungen: Renovierung, Trockenbau, Bodenverlegung, Pflaster- & Gartenarbeiten, Hausmeisterservice und Montage. Kontaktieren Sie uns für ein unverbindliches Angebot.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 md:gap-5 animate-[fadeInUp_1.6s_ease-out_forwards] justify-center lg:justify-start">
@@ -684,7 +680,7 @@ const ServicesSection = () => {
     },
     {
       icon: <Leaf className="w-6 h-6 md:w-8 md:h-8" />,
-      title: "Allround-Service",
+      title: "Bauservice Wendland ",
       desc: "Unterstützung bei allen Arbeiten rund ums Haus und den Garten."
     }
   ];
@@ -729,13 +725,13 @@ const AboutPreview = () => (
           <div className="relative w-full max-w-lg mx-auto lg:mx-0">
             <div className="absolute -top-4 -left-4 md:-top-6 md:-left-6 w-full h-full border border-gold-500/30 z-0"></div>
             <img
-              src="images/8.jpeg"
-              alt="Arbeiten von Luan Allround Service"
+              src="images/m5KWqDK6nMiJ7EBZ.jpeg"
+              alt="Arbeiten von Bauservice Wendland"
               className="relative z-10 w-full h-[400px] md:h-[600px] object-cover shadow-2xl"
             />
             <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-white text-earth-900 p-4 md:p-8 shadow-xl max-w-xs hidden lg:block z-20">
-              <p className="font-serif text-lg md:text-2xl italic">"Professionell, zuverlässig und mit Liebe zum Garten."</p>
-              <p className="text-right mt-2 md:mt-4 font-bold text-gold-600 text-xs md:text-sm tracking-widest">— Luan Allround Service</p>
+              <p className="font-serif text-lg md:text-2xl italic">"Professionell, zuverlässig und handwerklich präzise."</p>
+              <p className="text-right mt-2 md:mt-4 font-bold text-gold-600 text-xs md:text-sm tracking-widest">— Bauservice Wendland</p>
             </div>
           </div>
         </RevealOnScroll>
@@ -752,14 +748,14 @@ const AboutPreview = () => (
             {/* Unternehmensteil */}
             <div className="flex items-center gap-4 md:gap-6 p-4 md:p-6 bg-white/5 border border-white/10 rounded-sm mt-6 md:mt-8 backdrop-blur-sm hover:bg-white/10 transition-colors">
               <img
-                src="images/logo.png"
-                alt="Logo Luan Allround Service"
+                src="images/logoo.png"
+                alt="Logo Bauservice Wendland"
                 className="w-25 h-16 md:w-35 md:h-24 object-cover border-2 border-gold-500 shadow-md"
               />
               <div>
-                <h4 className="text-lg md:text-xl font-serif text-white">Luan Allround Service</h4>
-                <p className="text-gold-500 text-xs font-bold uppercase tracking-widest mb-1 md:mb-2">Garten- & Landschaftsbau</p>
-                <p className="text-gray-400 text-xs italic">"Qualität, die Sie spüren - Service, der überzeugt."</p>
+                <h4 className="text-lg md:text-xl font-serif text-white">Bauservice Wendland</h4>
+                <p className="text-gold-500 text-xs font-bold uppercase tracking-widest mb-1 md:mb-2">Bau- & Handwerk</p>
+                <p className="text-gray-400 text-xs italic">"Zuverlässig, fachkundig und alles-aus-einer-Hand."</p>
               </div>
             </div>
 
@@ -793,12 +789,12 @@ const AboutPreview = () => (
 
 const ProjectsGallery = () => {
   const [images] = useState<ProjectImage[]>([
-    { id: '1', url: grassImg, title: 'Professionelle Rasenpflege' },
-    { id: '2', url: img7, title: 'Das Gartenparadies Ihrer Familie' },
-    { id: '3', url: img9, title: '' },
-    { id: '4', url: img10, title: ' ' },
-    { id: '5', url: img18, title: 'Der perfekte Zaun' },
-    { id: '6', url: afterImg, title: 'vorher vs nachher' },
+    { id: '1', url: img2, title: 'Professionelle Rasenpflege' },
+    { id: '2', url: img1, title: '' },
+    { id: '3', url: img5, title: '' },
+    { id: '4', url: img4, title: ' ' },
+    { id: '5', url: img3, title: '' },
+    { id: '6', url: img6, title: '' },
 
 
   ]);
@@ -819,7 +815,8 @@ const ProjectsGallery = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-1 mt-8 md:mt-12">
           {images.map((img, index) => (
             <RevealOnScroll key={img.id} delay={index * 50}>
-              <Link to={`/blog/${blogPosts[index].slug}`} className="block">
+              {/* <Link to={`/blog/${blogPosts[index].slug}`} className="block"> */}
+              <div className="block">
                 <div className="group relative overflow-hidden aspect-[4/3] cursor-pointer shadow-md hover:shadow-xl transition-all duration-500">
                   <img
                     src={String(img.url)}
@@ -838,7 +835,8 @@ const ProjectsGallery = () => {
                     </button>
                   </div>
                 </div>
-              </Link>
+              </div>
+              {/* </Link> */}
             </RevealOnScroll>
           ))}
         </div>
@@ -869,18 +867,12 @@ const AnimationStyles = () => (
 const Testimonials = () => {
   const [currentPage, setCurrentPage] = useState(0);
 
-  const googleMapsUrl = "https://www.google.com/maps/place/Luan+Allround+Service/@49.1195743,9.1717969,1768539a,35y,350.44h/data=!3m1!1e3!4m18!1m9!3m8!1s0x47971d9ddc21dc61:0x8b73b203f70f96b!2sLuan+Allround+Service!8m2!3d48.8264987!4d8.2535412!9m1!1b1!16s%2Fg%2F11rr2yqn18!3m7!1s0x47971d9ddc21dc61:0x8b73b203f70f96b!8m2!3d48.8264987!4d8.2535412!9m1!1b1!16s%2Fg%2F11rr2yqn18?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D";
+  const googleMapsUrl = "https://www.google.com/maps/place/Bauservice+Wendland/@53.1061946,11.1168753,681m/data=!3m2!1e3!5s0x47ae443e67d3db27:0xb9fc008361d96057!4m6!3m5!1s0x47ae450ae64a9007:0x45547bbe07944b53!8m2!3d53.1061915!4d11.1217462!16s%2Fg%2F11xsd7sscx?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D";
 
   const allReviews = [
-    { name: "Toni D'Agostino", time: "vor 6 Monaten", text: "Ein Super-Team, Vorab wird ein Vor-Ort-Termin vereinbart um sich die Situation einen Überblick zu verschaffen. Gleichzeitig wird man beraten was besser gemacht werden kann. Am Einbautag wird alles Sauber, Präzise und mit Erfahrung eingebaut. Mit dem Ergebnis bin ich sehr zufrieden und kann die Firma sehr empfehlen!" },
-    { name: "Gerhard Gerschner", time: "vor 6 Monaten", text: "Qualitativ sehr gute Arbeit. Super freundliches Team. Die Jungs wissen was sie tun. Immer hilfsbereit und sehr schnell. Wer einen Zaun braucht sollte sich bei Luan Allround Service melden!!!" },
-    { name: "Tanja M", time: "vor 6 Monaten", text: "Der Zaunbau bei meinem Vater hat super geklappt…tolle Arbeit, sehr gute Kommunikation. Wir danken dem ganzen Team und können die Firma nur weiterempfehlen." },
-    { name: "Katrin Schindler", time: "vor 5 Monaten", text: "Sehr schnelle und sehr günstige Firma. Innerhalb weniger Tage wurde der Zaun gestellt. Super nette Leute. Absolut vertrauenswürdig. Kann ich jedem empfehlen!!" },
-    { name: "Marcus Bräuning", time: "vor 10 Monaten", text: "Danke nochmals für eure gute Arbeit, obwohl es geregnet hat wie aus Eimern. Die Bäume habt ihr wieder top in Form geschnitten wie es auch gewünscht war. Danke für eure schnelle Unterstützung und ihr seid ein tolles Team!" },
-    { name: "UGI Performance", time: "vor 11 Monaten", text: "Super Kompetenz. Fixer Aufbau. Tolles Design. Vielen Dank. Nur weiter zu empfehlen Top Qualität." },
-    { name: "Sebastian Morina", time: "vor 2 Jahren", text: "Sehr kompetente, Zuverlässige sowie preiswerte Firma. Empfehlenswert also holt euch gerne mal ein Angebot rein und überzeugt euch gerne selbst von meiner Zufriedenheit." },
-    { name: "Florim Sinani", time: "vor 2 Jahren", text: "Guten Tag, bin mit der Arbeit sehr zufrieden und kann nur gutes berichten. Freundliche Arbeiter und saubere Arbeit." },
-    { name: "Tanja Möhrmann", time: "vor 3 Jahren", text: "Sehr zu empfehlen! Hochwertiges Material, sehr freundlicher Kontakt und guter hilfsbereiter Service" }
+    { name: "Hans Peter Wagner", time: "vor einmonatigen", text: "Ich bin echt super zufrieden! Die Firma hat meine Küche aufgebaut und alles hat super geklappt. Der Aufbau ging schnell, sauber und ohne Stress. Der Preis war genau so, wie vorher besprochen – keine Überraschungen. Wirklich zuverlässig und freundlich, kann ich nur weiterempfehlen! 👏" },
+    { name: "Sahit Colaj", time: "vor einmonatigen", text: "6 Tage waren geplant, nach 5 Tagen war die auffahrt fertig, preislich sind wir auch im rahmen geblieben.Gerne wieder 👍" },
+    { name: "Muhamed Coli", time: "vor 2 Monaten", text: "Sehr genau arbeit und das Team sehr sympathisch" },
   ];
 
   const itemsPerPage = 3;
@@ -921,7 +913,7 @@ const Testimonials = () => {
                         {review.name}
                       </a>
                       <div className="relative group">
-                        <img src="https://img.icons8.com/color/48/verified-account.png" alt="Verified Badge" className="w-4 h-4" />
+                        <img src="https://img.icons8.com/?size=100&id=SRJUuaAShjVD&format=png&color=000000" alt="Verified Badge" className="w-4 h-4" />
                         <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 bg-black text-white text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10">
                           Verified Customer
                         </div>
@@ -1005,14 +997,14 @@ const Testimonials = () => {
 const InteractiveMap = () => (
   <div className="w-full h-[300px] md:h-[500px] relative">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991625996969!2d8.218991315674936!3d48.85822007928734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47971d9ddc21dc61%3A0x8b73b203f70f96b!2sFriedrichstra%C3%9Fe%20100%2C%2076456%20Kuppenheim%2C%20Germany!5e0!3m2!1sen!2s!4v1733414400000!5m2!1sen!2s"
+      src="https://www.google.com/maps?q=53.1061946,11.1168753&z=19&output=embed"
       width="100%"
       height="100%"
       style={{ border: 0 }}
       allowFullScreen
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
-      title="Standort in Kuppenheim"
+      title="Standort Bauservice Wendland"
       className="transition-all duration-700"
     ></iframe>
   </div>
@@ -1091,12 +1083,8 @@ const AboutPage = () => (
       image="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?q=80&w=2000&auto=format&fit=crop&quot"
     />
     <section className="py-16 md:py-24 bg-white relative overflow-hidden">
-      {/* Grid Background Pattern */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none" style={{
-        backgroundImage: `url('./images/grid.png')`,
-        backgroundRepeat: 'repeat',
-        backgroundSize: '200px 200px'
-      }}></div>
+
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="prose prose-sm md:prose-lg prose-stone mx-auto">
           {/* Unternehmen */}
@@ -1104,24 +1092,40 @@ const AboutPage = () => (
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-gold-400 to-earth-800 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
               <img
-                src={img20}
+                src={img11}
                 alt="Unser Team"
                 className="relative w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-2xl"
               />
             </div>
             <div className="mt-4 md:mt-6 text-center">
-              <h4 className="text-xl md:text-2xl font-serif text-earth-900">Memedali Limani   </h4>
-              <p className="text-gold-500 text-xs md:text-sm font-bold uppercase tracking-widest">Garten- & Landschaftsbau</p>
+              <h4 className="text-xl md:text-2xl font-serif text-earth-900">Owner's Name</h4>
+              <p className="text-gold-500 text-xs md:text-sm font-bold uppercase tracking-widest">Inhaber / Ansprechpartner</p>
             </div>
           </div>
 
-          <h3 className="text-2xl md:text-3xl font-serif text-earth-900 mb-4 md:mb-6 text-center">Handwerk mit Herz und regionaler Expertise</h3>
+          <h3 className="text-2xl md:text-3xl font-serif text-earth-900 mb-4 md:mb-6 text-center">Firmenprofil & Leistungen</h3>
           <p className="leading-loose text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
-            Als Ihr lokaler Landschaftsgärtner für den Raum Kuppenheim, Rastatt, Baden-Baden und Karlsruhe bringe ich Erfahrung, Zuverlässigkeit und ein Auge fürs Detail in jedes Projekt. Ob Gartenpflege, professioneller Zaunbau oder gründliche Reinigungsarbeiten – mein Ziel ist es, Ihre Außenbereiche in gepflegte und funktionale Wohlfühlorte zu verwandeln.
+            Bauservice Wendland ist ein regionales, umfassendes Bau- und Handwerksunternehmen. Wir sind spezialisiert auf professionelle, zuverlässige und qualitativ hochwertige Arbeit für private und gewerbliche Projekte. Unser komplettes Leistungsspektrum gewährleistet, dass Kunden viele Aspekte ihres Bauvorhabens über einen einzigen, vertrauenswürdigen Ansprechpartner abwickeln können.
           </p>
-          <p className="leading-loose text-gray-600 mb-4 md:mb-6 text-sm md:text-base">
-            Wir verstehen, dass jeder Garten einzigartig ist. Deshalb setzen wir auf eine persönliche Beratung und maßgeschneiderte Konzepte, die genau auf Ihre Wünsche und die Gegebenheiten vor Ort abgestimmt sind. Wir verbinden traditionelle Handwerkskunst mit modernen Techniken, um nachhaltige und ästhetisch ansprechende Ergebnisse zu schaffen, an denen Sie lange Freude haben werden.
-          </p>
+
+          <h4 className="text-lg font-serif text-earth-900 mt-4">Unsere Kernleistungen</h4>
+          <ul className="list-disc list-inside text-gray-600 mb-4">
+            <li><strong>Renovierung & Sanierung:</strong> Komplette Modernisierung von Innenräumen, einschließlich Küchen und Bädern, sowie umfassende Sanierungsarbeiten.</li>
+            <li><strong>Trockenbau & Innenausbau:</strong> Errichtung von Leichtbauwänden, Beplankung von Wänden und Decken, Dämmarbeiten und Installation von abgehängten Decken.</li>
+            <li><strong>Bodenverlegung:</strong> Professionelles Verlegen verschiedener Bodenbeläge wie Laminat, Vinyl, Designböden (LVT) sowie Fliesen und Naturstein.</li>
+            <li><strong>Pflaster- & Gartenarbeiten:</strong> Planung und Verlegung von Terrassen, Gehwegen und Auffahrten sowie allgemeine Gartenpflege und Außenbauprojekte.</li>
+            <li><strong>Hausmeisterservice:</strong> Laufende oder auftragsbezogene Wartung und Instandhaltung für Wohnanlagen oder Gewerbeobjekte, einschließlich kleinerer Reparaturen.</li>
+            <li><strong>Kleinreparaturen & Montage:</strong> Montage und Einbauservice für Möbel, Türen, Fenster und Regale.</li>
+          </ul>
+
+          <h4 className="text-lg font-serif text-earth-900 mt-2">Unsere Unternehmenswerte</h4>
+          <ul className="list-disc list-inside text-gray-600 mb-4">
+            <li><strong>Zuverlässigkeit & Fachkompetenz:</strong> Termine einhalten und qualitativ saubere Arbeit.</li>
+            <li><strong>Alles-aus-einer-Hand-Prinzip:</strong> Nahtlose, umfassende Lösungen für Bau- und Wartungsvorhaben.</li>
+            <li><strong>Faire & transparente Preise:</strong> Detaillierte Angebote ohne versteckte Kosten.</li>
+            <li><strong>Individuelle Beratung:</strong> Ausführliches Erstgespräch und maßgeschneiderte Lösungen.</li>
+            <li><strong>Flexibilität:</strong> Projekte jeder Größenordnung — von kleinen Montagen bis zu umfassenden Renovierungen.</li>
+          </ul>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 py-8 md:py-12 text-center border-y border-gray-200 my-8 md:my-12">
             <div>
@@ -1144,11 +1148,11 @@ const AboutPage = () => (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
               <div>
                 <Phone className="w-6 h-6 text-gold-500 mx-auto mb-2" />
-                <a href="tel:+4917647999118" className="text-earth-900 hover:text-gold-500 transition-colors font-bold">+49 17647999118</a>
+                <a href="tel:+4915257006453" className="text-earth-900 hover:text-gold-500 transition-colors font-bold">+490152 57006453</a>
               </div>
               <div>
                 <Send className="w-6 h-6 text-gold-500 mx-auto mb-2" />
-                <a href="mailto:info@luan-limani.de" className="text-earth-900 hover:text-gold-500 transition-colors">info@luan-limani.de</a>
+                <a href="mailto:Bauservicewendland@gmx.de" className="text-earth-900 hover:text-gold-500 transition-colors">Bauservicewendland@gmx.de</a>
               </div>
             </div>
           </div>
@@ -1190,7 +1194,7 @@ const ContactPage = () => (
                 <Phone className="text-gold-500 mt-1 mr-4 shrink-0" size={24} />
                 <div>
                   <h4 className="font-serif text-lg text-earth-900 mb-2">Telefon</h4>
-                  <a href="tel:+4917647999118" className="text-earth-900 hover:text-gold-500 transition-colors font-bold text-lg">+49 17647999118</a>
+                  <a href="tel:+4915257006453" className="text-earth-900 hover:text-gold-500 transition-colors font-bold text-lg">+490152 57006453</a>
                   <p className="text-gray-600 text-sm mt-1">Montag bis Freitag: 9:00 - 18:00 Uhr</p>
                 </div>
               </div>
@@ -1199,7 +1203,7 @@ const ContactPage = () => (
                 <Send className="text-gold-500 mt-1 mr-4 shrink-0" size={24} />
                 <div>
                   <h4 className="font-serif text-lg text-earth-900 mb-2">Email</h4>
-                  <a href="mailto:info@luan-limani.de" className="text-earth-900 hover:text-gold-500 transition-colors">info@luan-limani.de</a>
+                  <a href="mailto:Bauservicewendland@gmx.de" className="text-earth-900 hover:text-gold-500 transition-colors">Bauservicewendland@gmx.de</a>
                 </div>
               </div>
 
@@ -1243,7 +1247,7 @@ const BlogListPage = () => (
     <PageHeader
       title="Blog & Ratgeber"
       subtitle="Tipps & Erfahrungen"
-      image="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?q=80&w=2000&auto=format&fit=crop"
+      image="images/grass.jpg"
     />
     <section className="py-16 md:py-24 bg-white relative overflow-hidden">
       {/* Grid Background Pattern */}
@@ -1260,7 +1264,8 @@ const BlogListPage = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {blogPosts.map((post, index) => (
             <RevealOnScroll key={post.id} delay={index * 100}>
-              <Link to={`/blog/${post.slug}`} className="group block">
+              {/* <Link to={`/blog/${post.slug}`} className="group block"> */}
+              <div className="group block">
                 <div className="bg-white border border-stone-200 hover:shadow-2xl transition-all duration-500 overflow-hidden">
                   <div className="relative overflow-hidden aspect-[4/3]">
                     <img
@@ -1282,7 +1287,8 @@ const BlogListPage = () => (
                     </div>
                   </div>
                 </div>
-              </Link>
+              </div>
+              {/* </Link> */}
             </RevealOnScroll>
           ))}
         </div>
@@ -1359,8 +1365,8 @@ const BlogPostPage = () => {
             </RevealOnScroll>
             <RevealOnScroll delay={200}>
               <BeforeAfterSlider
-                beforeImage={beforeImg}
-                afterImage={afterImg}
+                beforeImage={img1}
+                afterImage={img3}
               />
             </RevealOnScroll>
           </div>
@@ -1454,18 +1460,18 @@ const BlogPostPage = () => {
                 Als Ihr lokaler Landschaftsgärtner in Kuppenheim, Rastatt, Baden-Baden und Karlsruhe stehe ich Ihnen mit Rat und Tat zur Seite.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="tel:+4917647999118" className="inline-flex items-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-earth-900 font-bold uppercase tracking-widest transition-colors">
+                <a href="tel:+4915257006453" className="inline-flex items-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-earth-900 font-bold uppercase tracking-widest transition-colors">
                   <Phone className="mr-2" size={20} />
-                  +49 176 47999118
+                  +490152 57006453
                 </a>
                 <Link to={NavigationLinks.CONTACT} className="inline-flex items-center px-8 py-4 border-2 border-white hover:bg-white hover:text-earth-900 font-bold uppercase tracking-widest transition-colors">
                   Kontakt aufnehmen
                 </Link>
               </div>
               <p className="mt-6 text-sm text-gray-400">
-                Ihr Memedali Limani<br />
-                Luan Allround Service<br />
-                Friedrichstraße 100, 76456 Kuppenheim
+                Ihr André<br />
+                Bauservice Wendland<br />
+                Breeserweg 7, 29451 Dannenberg
               </p>
             </div>
           </RevealOnScroll>
@@ -1495,17 +1501,7 @@ const FullGalleryPage = () => {
     { id: '6', url: img6, title: '' },
     { id: '7', url: img7, title: '' },
     { id: '8', url: img8, title: '' },
-    { id: '9', url: img9, title: '' },
-    { id: '10', url: img10, title: ' ' },
-    { id: '11', url: img11, title: '' },
-    { id: '12', url: img12, title: '' },
-    { id: '13', url: beforeImg, title: '' },
-    { id: '14', url: afterImg, title: '' },
-    { id: '15', url: img15, title: '' },
-    { id: '16', url: img16, title: '' },
-    { id: '17', url: img17, title: '' },
-    { id: '18', url: img18, title: '  ' },
-    { id: '19', url: img19, title: '  ' },
+
   ];
 
   // Display only 16 images initially, or all if expanded
@@ -1742,7 +1738,7 @@ const App = () => {
           </div>
 
           <a
-            href="https://wa.me/4917647999118"
+            href="https://wa.me/4915257006453"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform pointer-events-auto relative group"

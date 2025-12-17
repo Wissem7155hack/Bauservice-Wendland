@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
               <div className={`flex items-center ${logoColor} group-hover:${hoverColor} transition-colors`}>
                 <Leaf className="h-8 w-8 mr-2" />
                 <div className="flex flex-col">
-                  <span className="text-lg font-serif font-bold leading-none"> Luan Allround Service </span>
+                  <span className="text-lg font-serif font-bold leading-none"> Bauservice Wendland </span>
                 </div>
               </div>
             </Link>
@@ -63,11 +63,11 @@ const Navbar: React.FC = () => {
 
             {/* Kontakt - Desktop */}
             <div className="hidden md:flex items-center space-x-4 lg:space-x-6 pl-4 lg:pl-8 lg:border-l lg:border-white/20">
-              <a href="tel:+4917647999118" className="flex items-center text-gold-500 hover:text-white transition-colors group">
+              <a href="tel:+4915257006453" className="flex items-center text-gold-500 hover:text-white transition-colors group">
                 <div className="w-8 h-8 rounded-full border border-gold-500 flex items-center justify-center mr-3 group-hover:bg-gold-500 group-hover:text-earth-900 transition-all">
                   <Phone size={14} />
                 </div>
-                <span className={`text-sm font-bold tracking-wide ${textColor} group-hover:text-gold-500 transition-colors`}>+49 17647999118
+                <span className={`text-sm font-bold tracking-wide ${textColor} group-hover:text-gold-500 transition-colors`}>+490152 57006453
 
                 </span>
               </a>
@@ -97,12 +97,12 @@ const Navbar: React.FC = () => {
             ))}
 
             <div className="mt-12 flex flex-col items-center space-y-4 border-t border-white/10 pt-12 w-48">
-              <a href="mailto:luanallroundservice@gmail.com" className="flex flex-col items-center text-gold-500">
-                <span className="text-xl font-serif text-white">luanallroundservice@gmail.com</span>
+              <a href="mailto:Bauservicewendland@gmx.de" className="flex flex-col items-center text-gold-500">
+                <span className="text-xl font-serif text-white">Bauservicewendland@gmx.de</span>
               </a>
-              <a href="tel:+4917647999118" className="flex flex-col items-center text-gold-500">
+              <a href="tel:+4915257006453" className="flex flex-col items-center text-gold-500">
                 <Phone size={32} className="mb-2" />
-                <span className="text-xl font-serif text-white">+49 17647999118</span>
+                <span className="text-xl font-serif text-white">+490152 57006453</span>
               </a>
             </div>
           </div>

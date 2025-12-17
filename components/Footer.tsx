@@ -12,9 +12,9 @@ const Footer: React.FC = () => {
             <div className="flex items-center space-x-2">
               <Leaf className="text-gold-500 h-8 w-8" />
               <div>
-                <span className="block text-xl font-bold text-white font-serif">Luan Allround Service</span>
-                <span className="block text-xs text-gray-400">Geschäftsführer: Memedali Limani</span>
-                <span className="block text-[0.6rem] tracking-[0.4em] text-gold-500 uppercase">Friedrichstraße 100, 76456 Kuppenheim</span>
+                <span className="block text-xl font-bold text-white font-serif">Bauservice Wendland</span>
+                <span className="block text-xs text-gray-400">Inhaber / Ansprechpartner: André</span>
+                <span className="block text-[0.6rem] tracking-[0.4em] text-gold-500 uppercase">Breeserweg 7, 29451 Dannenberg</span>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed font-light">
@@ -40,15 +40,15 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-gray-300 text-sm">
               <li className="flex items-start group">
                 <MapPin size={18} className="mr-3 mt-0.5 shrink-0 text-gray-500 group-hover:text-gold-500 transition-colors" />
-                <span>Friedrichstraße 100, 76456 Kuppenheim</span>
+                <span>Breeserweg 7, 29451 Dannenberg</span>
               </li>
               <li className="flex items-center group">
                 <Phone size={18} className="mr-3 shrink-0 text-gray-500 group-hover:text-gold-500 transition-colors" />
-                <span>+49 17647999118</span>
+                <span>0152 57006453</span>
               </li>
               <li className="flex items-center group">
                 <Mail size={18} className="mr-3 shrink-0 text-gray-500 group-hover:text-gold-500 transition-colors" />
-                <span>luanallroundservice@gmail.com</span>
+                <span>Bauservicewendland@gmx.de</span>
               </li>
             </ul>
           </div>
@@ -75,15 +75,15 @@ const Footer: React.FC = () => {
                 className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-gold-500 hover:border-gold-500 hover:text-earth-900 transition-all"
               >
                 <Facebook size={18} />
-              
-               
+
+
               </a>
             </div>
           </div>
         </div>
 
         <div className="border-t border-white/5 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
-          <p>&copy; {new Date().getFullYear()} Luan Allround Service. Alle Rechte vorbehalten.</p>
+          <p>&copy; {new Date().getFullYear()} Bauservice Wendland. Alle Rechte vorbehalten.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Datenschutzrichtlinie</a>
             <a href="#" className="hover:text-white transition-colors">Nutzungsbedingungen</a>
