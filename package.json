@@ -3,21 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-
-  
   "homepage": "https://wissem7155hack.github.io/Bauservice-Wendland",
   "repository": {
     "type": "git",
     "url": "https://github.com/Wissem7155hack/Bauservice-Wendland.git"
   },
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "build:gh": "vite build",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:gh": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@google/genai": "^1.30.0",
     "lucide-react": "^0.554.0",

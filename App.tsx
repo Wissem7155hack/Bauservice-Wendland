@@ -498,7 +498,7 @@ const ContactForm = () => {
               id="city"
               type="text"
               name="city"
-              placeholder="Kuppenheim"
+              placeholder="Dannenberg"
               className="w-full p-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 text-base"
               required
             />
