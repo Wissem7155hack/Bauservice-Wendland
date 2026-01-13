@@ -23,6 +23,7 @@ import img9 from './images/moroccan-flower.png';
 import img10 from './images/pattern.png';
 import img11 from './images/logoo.png';
 import img12 from './images/path.jpg';
+import img13 from './images/arrows.png';
 
 
 
@@ -414,7 +415,12 @@ const SectionTitle: React.FC<{ subtitle: string; title: string; align?: 'left' |
 );
 
 // Kontaktformular Komponente
-const ContactForm = () => {
+interface ContactFormProps {
+  variant?: 'dark' | 'light';
+  showLogo?: boolean;
+}
+
+const ContactForm: React.FC<ContactFormProps> = ({ variant = 'dark', showLogo = false }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
 
@@ -425,7 +431,7 @@ const ContactForm = () => {
     const formData = new FormData(form);
 
     // Web3Forms Access Key
-    formData.append("access_key", "");
+    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -450,10 +456,25 @@ const ContactForm = () => {
     }
   };
 
+  const bgColor = variant === 'light' ? 'bg-white' : 'bg-black';
+  const textColor = variant === 'light' ? 'text-earth-900' : 'text-white';
+  const labelColor = variant === 'light' ? 'text-earth-900' : 'text-white';
+  const inputBg = variant === 'light' ? 'bg-gray-50' : 'bg-white';
+  const inputBorder = variant === 'light' ? 'border border-gray-200' : '';
+
   return (
     <>
-      <div className="bg-black p-6 md:p-8 rounded-xl shadow-2xl w-full max-w-md mx-auto lg:mx-0">
-        <h3 className="text-2xl md:text-3xl font-black text-white text-center mb-6 md:mb-8 uppercase font-sans">
+      <div className={`${bgColor} p-6 md:p-8 rounded-xl shadow-2xl w-full max-w-md mx-auto lg:mx-0 transition-colors duration-300`}>
+        {showLogo && (
+          <div className="flex justify-center mb-6">
+            <img
+              src={img11}
+              alt="Unser Team"
+              className="relative w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-2xl"
+            />
+          </div>
+        )}
+        <h3 className={`text-2xl md:text-3xl font-black ${textColor} text-center mb-6 md:mb-8 uppercase font-sans`}>
           Kostenlose Beratung
         </h3>
 
@@ -461,7 +482,7 @@ const ContactForm = () => {
 
           {/* Name Field */}
           <div>
-            <label htmlFor="name" className="block text-white font-bold text-sm mb-1">
+            <label htmlFor="name" className={`block ${labelColor} font-bold text-sm mb-1`}>
               Vollständiger Name *
             </label>
             <input
@@ -469,14 +490,14 @@ const ContactForm = () => {
               type="text"
               name="name"
               placeholder="Max Mustermann"
-              className="w-full p-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 text-base"
+              className={`w-full p-3 rounded-md ${inputBg} ${inputBorder} text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 text-base`}
               required
             />
           </div>
 
           {/* Phone Field */}
           <div>
-            <label htmlFor="phone" className="block text-white font-bold text-sm mb-1">
+            <label htmlFor="phone" className={`block ${labelColor} font-bold text-sm mb-1`}>
               Telefon *
             </label>
             <input
@@ -484,14 +505,14 @@ const ContactForm = () => {
               type="tel"
               name="phone"
               placeholder="+49 1234 567890"
-              className="w-full p-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 text-base"
+              className={`w-full p-3 rounded-md ${inputBg} ${inputBorder} text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 text-base`}
               required
             />
           </div>
 
           {/* City Field */}
           <div>
-            <label htmlFor="city" className="block text-white font-bold text-sm mb-1">
+            <label htmlFor="city" className={`block ${labelColor} font-bold text-sm mb-1`}>
               Deine Stadt *
             </label>
             <input
@@ -499,14 +520,14 @@ const ContactForm = () => {
               type="text"
               name="city"
               placeholder="Dannenberg"
-              className="w-full p-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 text-base"
+              className={`w-full p-3 rounded-md ${inputBg} ${inputBorder} text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 text-base`}
               required
             />
           </div>
 
           {/* Message Field */}
           <div>
-            <label htmlFor="message" className="block text-white font-bold text-sm mb-1">
+            <label htmlFor="message" className={`block ${labelColor} font-bold text-sm mb-1`}>
               Kurze Beschreibung Ihrer Vorstellungen *
             </label>
             <textarea
@@ -514,7 +535,7 @@ const ContactForm = () => {
               name="message"
               placeholder="Ihre Nachricht..."
               rows={3}
-              className="w-full p-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm resize-none"
+              className={`w-full p-3 rounded-md ${inputBg} ${inputBorder} text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm resize-none`}
               required
             />
           </div>
@@ -527,7 +548,7 @@ const ContactForm = () => {
               className="mt-1"
               required
             />
-            <label htmlFor="agb" className="text-xs text-gray-300">
+            <label htmlFor="agb" className={`text-xs ${variant === 'light' ? 'text-gray-600' : 'text-gray-300'}`}>
               Ich stimme den{' '}
               <a
                 href="/agb"
@@ -594,72 +615,120 @@ const ContactForm = () => {
 
 // --- Hauptabschnitte ---
 
-const Hero = () => (
-  <div className="relative min-h-screen w-full overflow-visible pb-12">
-    {/* Hintergrundbild mit langsamer Zoom-Effekt */}
-    <div
-      className="absolute inset-0 bg-cover bg-center animate-slow-zoom"
-      style={{ backgroundImage: 'url("images/grasshero2.png")' }}
-    >
-      <div className="absolute inset-0 bg-black/40"></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-earth-900/80 via-transparent to-black/20"></div>
+const HeroText = () => (
+  <>
+    <div className="overflow-hidden mb-2">
+      <p className="text-gold-500 font-bold tracking-[0.3em] uppercase text-xs md:text-sm animate-[fadeInUp_1s_ease-out_forwards]">
+        Bau- & Handwerk
+      </p>
     </div>
+    <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.1] drop-shadow-2xl mb-6 md:mb-8 animate-[fadeInUp_1.2s_ease-out_forwards]">
+      Umweltprojekte
+      <br />
+      <span className="italic font-light text-gold-400">harmonisch</span>
+    </h1>
 
-    {/* Inhalt */}
-    <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center z-10 pt-20 lg:pt-10">
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-        <div className="max-w-2xl text-center lg:text-left">
-          <div className="overflow-hidden mb-2">
-            <p className="text-gold-500 font-bold tracking-[0.3em] uppercase text-xs md:text-sm animate-[fadeInUp_1s_ease-out_forwards]">
-              Bau- & Handwerk
-            </p>
-          </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.1] drop-shadow-2xl mb-6 md:mb-8 animate-[fadeInUp_1.2s_ease-out_forwards]">
-            Umweltprojekte
-            <br />
-            <span className="italic font-light text-gold-400">harmonisch</span>
-          </h1>
+    <p className="text-lg md:text-xl text-gray-200 font-light max-w-2xl border-l-2 border-gold-500 pl-4 md:pl-6 mb-8 md:mb-10 animate-[fadeInUp_1.4s_ease-out_forwards] mx-auto lg:mx-0">
+      Bauservice Wendland bietet umfassende Bau- und Handwerksleistungen: Renovierung, Trockenbau, Bodenverlegung, Pflaster- & Gartenarbeiten, Hausmeisterservice und Montage. Kontaktieren Sie uns für ein unverbindliches Angebot.
+    </p>
 
-          <p className="text-lg md:text-xl text-gray-200 font-light max-w-2xl border-l-2 border-gold-500 pl-4 md:pl-6 mb-8 md:mb-10 animate-[fadeInUp_1.4s_ease-out_forwards] mx-auto lg:mx-0">
-            Bauservice Wendland bietet umfassende Bau- und Handwerksleistungen: Renovierung, Trockenbau, Bodenverlegung, Pflaster- & Gartenarbeiten, Hausmeisterservice und Montage. Kontaktieren Sie uns für ein unverbindliches Angebot.
-          </p>
+    <div className="flex flex-col sm:flex-row gap-4 md:gap-5 animate-[fadeInUp_1.6s_ease-out_forwards] justify-center lg:justify-start">
+      <Link
+        to={NavigationLinks.SERVICES}
+        className="px-6 md:px-10 py-3 md:py-4 bg-gold-500 hover:bg-gold-600 text-white font-bold tracking-widest uppercase transition-all duration-300 text-center shadow-xl hover:-translate-y-1 text-sm md:text-base"
+      >
+        Unsere Leistungen
+      </Link>
+      <Link
+        to={NavigationLinks.PROJECTS}
+        className="px-6 md:px-10 py-3 md:py-4 bg-transparent hover:bg-white/10 text-white border border-white/30 font-bold tracking-widest uppercase transition-all duration-300 text-center backdrop-blur-sm hover:-translate-y-1 text-sm md:text-base"
+      >
+        Projekte ansehen
+      </Link>
+    </div>
+  </>
+);
 
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-5 animate-[fadeInUp_1.6s_ease-out_forwards] justify-center lg:justify-start">
-            <Link
-              to={NavigationLinks.SERVICES}
-              className="px-6 md:px-10 py-3 md:py-4 bg-gold-500 hover:bg-gold-600 text-white font-bold tracking-widest uppercase transition-all duration-300 text-center shadow-xl hover:-translate-y-1 text-sm md:text-base"
-            >
-              Unsere Leistungen
-            </Link>
-            <Link
-              to={NavigationLinks.PROJECTS}
-              className="px-6 md:px-10 py-3 md:py-4 bg-transparent hover:bg-white/10 text-white border border-white/30 font-bold tracking-widest uppercase transition-all duration-300 text-center backdrop-blur-sm hover:-translate-y-1 text-sm md:text-base"
-            >
-              Projekte ansehen
-            </Link>
-          </div>
-          {/* Mobiles Kontaktformular direkt unter den Buttons */}
-          <div className="lg:hidden mt-6 animate-[fadeInUp_1.6s_ease-out_forwards] px-4">
-            <ContactForm />
-          </div>
-        </div>
+const MobileHero = () => (
+  <div className="lg:hidden w-full bg-white">
+    {/* Top Section: Image, Text, Arrows */}
+    <div className="relative h-screen flex flex-col justify-center pb-40">
+      <div
+        className="absolute inset-0 bg-cover bg-center animate-slow-zoom"
+        style={{ backgroundImage: `url(${img2})` }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-earth-900/90 via-transparent to-black/20"></div>
+      </div>
 
-        {/* Kontaktformular rechts - für Desktop sichtbar */}
-        <div className="hidden lg:block animate-[fadeInUp_1.6s_ease-out_forwards]">
-          <ContactForm />
-        </div>
+      <div className="relative z-10 px-4 sm:px-6 flex flex-col items-center justify-center h-full pt-20">
+        <HeroText />
+      </div>
+
+      {/* Downward Arrows */}
+      <div className="absolute bottom-20 left-0 right-0 z-20 flex justify-center pointer-events-none">
+        <img
+          src={img13}
+          alt="Scroll Down"
+          className="w-36 h-auto object-contain drop-shadow-lg"
+        />
       </div>
     </div>
 
-    {/* Scroll-Indikator */}
-    <div className="absolute bottom-6 md:bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white/50">
-      <div className="flex flex-col items-center">
-        <span className="text-[10px] tracking-widest uppercase mb-2">Scrollen</span>
-        <div className="w-px h-8 md:h-12 bg-white/50"></div>
-      </div>
+    {/* Mobile Contact Form Section */}
+    <div className="px-4 py-12 bg-white relative z-30 -mt-8 rounded-t-[2rem] shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
+      <ContactForm variant="light" showLogo={true} />
     </div>
   </div>
 );
+
+const Hero = () => (
+  <>
+    {/* Desktop Layout */}
+    <div className="hidden lg:block relative min-h-screen w-full overflow-visible pb-12">
+      {/* Hintergrundbild mit langsamer Zoom-Effekt */}
+      <div
+        className="absolute inset-0 bg-cover bg-center animate-slow-zoom"
+        style={{ backgroundImage: `url(${img7})` }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-earth-900/80 via-transparent to-black/20"></div>
+      </div>
+
+      {/* Inhalt */}
+      <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center z-10 pt-20 lg:pt-10">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+          <div className="max-w-2xl text-center lg:text-left">
+            <HeroText />
+          </div>
+
+          {/* Kontaktformular rechts - für Desktop sichtbar */}
+          <div className="hidden lg:block animate-[fadeInUp_1.6s_ease-out_forwards]">
+            <ContactForm />
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll-Indikator */}
+      <div className="absolute bottom-6 md:bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white/50">
+        <div className="flex flex-col items-center">
+          <span className="text-[10px] tracking-widest uppercase mb-2">Scrollen</span>
+          <div className="w-px h-8 md:h-12 bg-white/50"></div>
+        </div>
+      </div>
+    </div>
+
+    {/* Mobile Layout */}
+    <MobileHero />
+  </>
+);
+
+
+
+
+
+
+
 
 const ServicesSection = () => {
   const services = [
@@ -687,10 +756,7 @@ const ServicesSection = () => {
 
   return (
     <section className="py-16 md:py-24 bg-[#F5F5F0] relative overflow-hidden">
-      {/* Topographic Background Pattern */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%239C92AC' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E")`,
-      }}></div>
+
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <RevealOnScroll>
@@ -717,7 +783,7 @@ const ServicesSection = () => {
 
 const AboutPreview = () => (
   <section className="py-16 md:py-24 bg-earth-900 text-white overflow-hidden relative">
-    <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('images/moroccan-flower.png')] opacity-5 pointer-events-none"></div>
+
 
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-16">
@@ -725,7 +791,7 @@ const AboutPreview = () => (
           <div className="relative w-full max-w-lg mx-auto lg:mx-0">
             <div className="absolute -top-4 -left-4 md:-top-6 md:-left-6 w-full h-full border border-gold-500/30 z-0"></div>
             <img
-              src="images/m5KWqDK6nMiJ7EBZ.jpeg"
+              src={img3}
               alt="Arbeiten von Bauservice Wendland"
               className="relative z-10 w-full h-[400px] md:h-[600px] object-cover shadow-2xl"
             />
@@ -742,13 +808,13 @@ const AboutPreview = () => (
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mt-4 leading-tight">Handwerkliche <span className="text-gold-500 italic">Tradition</span></h2>
 
             <p className="text-gray-300 text-base md:text-lg font-light leading-relaxed mt-4 md:mt-6">
-              Ich bin Memedali Limani, Ihr zuverlässiger Landschaftsgärtner. Ich übernehme Zaunmontage, Gartenpflege, Terrassen- und Hofreinigung sowie alle anfallenden Arbeiten rund ums Haus — sauber, pünktlich und professionell.
+              Ich bin Ihr zuverlässiger Landschaftsgärtner. Ich übernehme Zaunmontage, Gartenpflege, Terrassen- und Hofreinigung sowie alle anfallenden Arbeiten rund ums Haus — sauber, pünktlich und professionell.
             </p>
 
             {/* Unternehmensteil */}
             <div className="flex items-center gap-4 md:gap-6 p-4 md:p-6 bg-white/5 border border-white/10 rounded-sm mt-6 md:mt-8 backdrop-blur-sm hover:bg-white/10 transition-colors">
               <img
-                src="images/logoo.png"
+                src={img11}
                 alt="Logo Bauservice Wendland"
                 className="w-25 h-16 md:w-35 md:h-24 object-cover border-2 border-gold-500 shadow-md"
               />
@@ -822,6 +888,7 @@ const ProjectsGallery = () => {
                     src={String(img.url)}
                     alt={blogPosts[index].title}
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-earth-900/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center p-4 md:p-6 text-center">
                     <span className="text-gold-500 text-xs tracking-widest uppercase mb-2">
@@ -1272,6 +1339,7 @@ const BlogListPage = () => (
                       src={post.image}
                       alt={post.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
@@ -1738,7 +1806,7 @@ const App = () => {
           </div>
 
           <a
-            href="https://wa.me/4915257006453"
+            href="https://wa.me/12043848706"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform pointer-events-auto relative group"

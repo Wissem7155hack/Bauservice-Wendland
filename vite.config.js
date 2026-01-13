@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // Use a relative base so `dist` works when served from root or a subpath
-  base: '/',
+  base: './',
   build: {
     outDir: 'dist',
     sourcemap: false

@@ -1,6 +1,8 @@
 {
   "name": "Bauservice Wendland | Bau & Handwerk",
   "private": true,
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist --dotfiles",
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://wissem7155hack.github.io/Bauservice-Wendland",
@@ -11,10 +13,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:gh": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "@google/genai": "^1.30.0",

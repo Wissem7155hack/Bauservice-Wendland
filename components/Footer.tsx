@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/profile.php?id=61584302041280"
+                href="https://www.facebook.com/profile.php?id=61578970497821"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-gold-500 hover:border-gold-500 hover:text-earth-900 transition-all"
